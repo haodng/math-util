@@ -35,5 +35,7 @@ public class MathUtil {
         //IllegalAgrumentException nếu tao cố tình, người xài hàm
         // này của t đưa tham số amm, tham số >20
         System.out.println("expected: IllegelAgrumentException: " + MathUtility.getFactorial(-5));
+        System.out.println("chuc cuoi tuan t9 vui ve");
+        
     }
 }
