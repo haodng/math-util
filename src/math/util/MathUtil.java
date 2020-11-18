@@ -36,6 +36,6 @@ public class MathUtil {
         // này của t đưa tham số amm, tham số >20
         System.out.println("expected: IllegelAgrumentException: " + MathUtility.getFactorial(-5));
         System.out.println("chuc cuoi tuan t9 vui ve");
-        
+        System.out.println(" I want to see the RED or Green!!!");
     }
 }
