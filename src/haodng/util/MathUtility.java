@@ -24,17 +24,33 @@ public class MathUtility {
     //giai thừa tăng cực nhanh, 21! long kh chứa đc
     //bài này mình sẽ chặn giai thừa từ 0..20
     //âm hoặc 21 chửi , kh thèm tính
-    public static long getFactorial(int n){
-        if(n<0 || n>20)
-            throw new IllegalArgumentException("n must be between 0..20");
-        if(n == 0 || n == 1)
-            return 1; // dac biet, return luon
-        //dua nao viet else o day, tru diem
-        // mac nhien CPU đến được ở đây la hiểu răng n=2..20
-        long result =1;
-        for(int i=2 ; i<=n ; i++){
-                result *=i;
+    
+//    public static long getFactorial(int n){
+//        if(n<0 || n>20)
+//            throw new IllegalArgumentException("n must be between 0..20");
+//        if(n == 0 || n == 1)
+//            return 1; // dac biet, return luon
+//        //dua nao viet else o day, tru diem
+//        // mac nhien CPU đến được ở đây la hiểu răng n=2..20
+//        long result =1;
+//        for(int i=2 ; i<=n ; i++){
+//                result *=i;
+//        }
+//        return result;
+//}
+            //viet bang de quy cho pro
+        public static long getFactorial(int n){
+            if( n < 0 || n > 20)
+                throw new IllegalAgrumentException("n musr be between 0..20");
+            if(n == 0 || n== 1)
+                return 1;
+            return n * getFactorial(n-1); // de quy do em
+            // goi lai chinh ham cua minh voi quy mo khac, n-1
+            // di mai se ve 1
         }
-        return result;
-    }
+        // 5! = 5*4! ; 4!= 4*3! ;
+        //ket luab n!=n*(n-1) 
+        //phai co dung kh thi lap vo tan
+
+
 }
