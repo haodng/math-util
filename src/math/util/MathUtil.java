@@ -5,7 +5,7 @@
  */
 package math.util;
 
-import haodng.utill.MathUtility;
+import haodng.util.MathUtility;
 
 /**
  *
