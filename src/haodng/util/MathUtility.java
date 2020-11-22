@@ -41,10 +41,10 @@ public class MathUtility {
             //viet bang de quy cho pro
         public static long getFactorial(int n){
             if( n < 0 || n > 20)
-                throw new IllegalAgrumentException("n musr be between 0..20");
+                throw new IllegalArgumentException("n must be between 0..20");
             if(n == 0 || n== 1)
                 return 1;
-            return n * getFactorial(n-1); // de quy do em
+            return n * getFactorial(n-1); 
             // goi lai chinh ham cua minh voi quy mo khac, n-1
             // di mai se ve 1
         }
